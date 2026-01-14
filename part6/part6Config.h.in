@@ -1,0 +1,6 @@
+#ifndef PART6CONFIG_H
+#define PART6CONFIG_H
+
+#cmakedefine USE_ADDER
+
+#endif
