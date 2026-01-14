@@ -27,3 +27,6 @@ target_link_directories(
 target_link_libraries(
   ${PROJECT_NAME} ${EXTRA_LINK_LIBS}
 )
+
+set_target_properties(${PROJECT_NAME} PROPERTIES PUBLIC_HEADER ${CMAKE_BINARY_DIR}/part5Config.h)
+install(TARGETS ${PROJECT_NAME} LIBRARY DESTINATION bin PUBLIC_HEADER DESTINATION lib)
